@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./nasa.css">
+</head>
+
+<body>
+
+    <header>
+        <h2>Visor de Imágenes de los Rovers de Marte</h2>
+        
+        <form>
+            <select class="component" name="cmbrover" id="cmbrover">
+                <option value="">Seleccionar Rover</option>
+                <option value="curiosity">Curiosity</option>
+                <option value="opportunity">Opportunity</option>
+                <option value="spirit">Spirit</option>
+            </select>
+
+            <select class="component" name="cmbsol" id="cmbsol" onchange="seleccionarTiempo()">
+                <option value="0">Seleccionar Sol</option>
+                <option value="1">Sol Marciano</option>
+                <option value="2">Sol Tierra</option>
+            </select>
+
+            <input class="component" type="date" name="txtfecha" id="txtfecha" disabled>
+            <input class="component" type="number" name="txtSolMar" id="txtSolMar" disabled>
+
+            <select class="component" name="cmbcamara" id="cmbcamara">
+                <option value="">Seleccionar Cámara</option>
+                <option value="fhaz">Cámara delantera para evitar peligros</option>
+                <option value="rhaz">Cámara trasera para evitar peligros</option>
+                <option value="mast">Cámara de mástil</option>
+                <option value="chemcam">Complejo de cámara y química</option>
+                <option value="mahli">Lector de imágenes Mars Hand Lens</option>
+                <option value="mardi">Generador de imágenes Mars Descent</option>
+                <option value="navcam">Cámara de navegación</option>
+                <option value="pancam">Cámara Panorámica</option>
+                <option value="minites">Espectrómetro de emisión térmica en miniatura (Mini-TES)</option>
+            </select>
+
+            <button class="component" id="filtrar">Filtrar</button>
+            <span id="load"> </span>
+        </form>
+        <p class="error"></p>
+    </header>
+
+    <section>
+        <div id="datos">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Código</th>
+                        <th>Rover</th>
+                        <th>Fecha Lanzamiento</th>
+                        <th>Fecha Aterrizaje</th>
+                        <th>Fecha Tierra</th>
+                        <th>Fecha Marte</th>
+                    </tr>
+                </thead>
+    
+            </table>
+            <nav><button id="ant" disabled><</button><button id="sig" disabled>></button></nav>
+        </div>
+        
+        <div id="imagen">
+            <img src="" alt="" srcset="" width="60%">
+        </div>
+
+    </section>
+
+    <script src="./visor.js"></script>
+</body>
+
+</html>

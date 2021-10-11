@@ -1,0 +1,72 @@
+*{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.component{
+    padding: 5px;  
+}
+
+header{
+    text-align: center;
+    margin: 5px;
+    background-color: #f8efed;
+    padding: 5px;
+}
+
+h2{
+    text-align: center;
+    color :  #208ad8;
+}
+
+section{
+    margin-top: 1.5rem;
+    }
+    
+#datos{
+    display: inline-block;
+    width: 49%;
+    font-size: 0.8rem;
+    vertical-align: top;
+    text-align: center;
+}
+
+table{
+    display: inline-block;
+}
+
+table thead{
+    background-color: #20b4d8;
+}
+
+table tbody tr {
+    font-size: 0.6rem;
+    text-align: center;
+}
+
+th,td{
+    border: 0.01rem solid;
+}
+
+#imagen{
+    display: inline-block;
+    width: 49%;
+    text-align: center;
+}
+
+img{
+    margin: auto;
+}
+
+p{
+    text-align: center;
+}
+
+.error{
+    color:red;
+    font-weight: bold;
+    font-size: 0.9rem;
+}
+
+button{
+    font-weight: bold;
+}
